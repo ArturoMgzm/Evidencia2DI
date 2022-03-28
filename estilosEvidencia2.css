@@ -17,3 +17,8 @@ div.opcion{
 div.opcion:hover{
 	margin: 10px 20px 10px 20px;
 }
+
+a, a:hover, a :visited{
+	color: black;
+	text-decoration: none;
+}
