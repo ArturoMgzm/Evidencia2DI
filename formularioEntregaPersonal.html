@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Autorent </title>
+		<link rel="icon" href="./autorentLogo.PNG">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="./estilosEvidencia2.css">
+	</head>
+	<body>
+		<div style ="margin-top: 0px; background-color:black; color: white; width:100%;height:100px;">
+			<a href="./mainMenu.html">
+            <img style = "float:left;" src="./autorentLogo.PNG" width="100px" height="100px" />
+            </a>
+			<h1 style="text-align: center; line-height:100px; font-family: Courier; font-weight: bold;">Datos del pedido</h1>
+        </div>
+
+        <ul class="breadcrumb" style="padding-bottom: 0px;">
+            <li><a href="./mainMenu.html">Inicio</a></li>
+            <li><a href="./catalogoPersonal.html">Vehiculo Personal</a></li>
+            <li><a href="./catalogoDisponiblePersonal.html">Catalogo Personal Disponible</a></li>
+            <li>Datos del pedido</li>
+        </ul>
+
+        <div class="container" style="padding-top: 0px;">
+            <form action="./pagos.html">
+                <div class="form-group">
+                    <label for="Nombre">Nombre del usuario arrendador*</label>
+                    <input class="form-control" id="Nombre" type="text" placeholder="Nombre completo">
+                </div>
+                
+                <div class="form-group">
+                    <label for="Email">Email del usuario*</label>
+                    <input class="form-control" id="Nombre" type="email" placeholder="ejemplo@dominio.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Notas del pedido</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Escribe las notas del pedido"></textarea>
+                </div>
+
+                <div>
+                    <label for="Nombre" style="padding-left: 16px; padding-top: 16px;">Metodo de entrega*</label>
+                </div>
+
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1"">Sucursal</label>
+                  
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">Envio</label>
+                </div>
+
+                <div class="none" style="padding: 0px;">
+                    <label for="helper" style="padding-left: 16px; font-size: 11px;">En caso de ser envio se aplicara un cargo extra</label>
+                </div>
+
+                <div style="padding-left: 16px; padding-bottom: 8px;">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Sucursal MTY</option>
+                        <option value="2">Sucursal GLP</option>
+                        <option value="3">Sucursal Apodaca</option>
+                    </select>
+                    <label for="helper" style="font-size: 11px;">En caso de elegir sucursal seleccione una sucusal para recoger el vehiculo</label>
+                </div>
+
+                <div style="padding-left: 16px; padding-bottom: 8px;">
+                    <label for="helper" style="font-size: 11px;">En caso de elegir envio ingrese la dirreción donde se enivara su vehiculo</label>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Dirreción</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Paseo del Acueducto 2610">
+                      </div>
+    
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Ciudad</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Monterrey</option>
+                          <option>Guadalupe</option>
+                          <option>Apodaca</option>
+                        </select>
+                      </div>
+    
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">CP</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="64909">
+                      </div>
+                </div>
+                
+                <div style="padding-left: 16px; padding-bottom: 8px;">
+                    <label for="start">Fecha de inicio de renta:*</label>
+
+                    <input type="date" id="start" name="trip-start"
+                        value="31-03-2022"
+                        min="2022-03-30" max="2022-12-31">
+                </div>
+
+                <div style="padding-left: 16px; padding-bottom: 8px;">
+                    <label for="start">Fecha de fin de renta:*</label>
+
+                    <input type="date" id="start" name="trip-end"
+                        value="31-03-2022"
+                        min="2022-03-30" max="2022-12-31">
+                </div>
+
+                <div class="col-12" style="padding-left: 16px; padding-bottom: 0;">
+                    <a href="./pagos.html">
+                    <button class="btn btn-primary" type="summit" style="background-color: black; border-color: black;">Ir a pagos</button>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+	</body>
+</html>
