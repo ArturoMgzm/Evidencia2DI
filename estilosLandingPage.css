@@ -1,0 +1,49 @@
+body{
+	background-color: #e3e3e3;
+	font-family: courier;
+	color:black;
+	margin: 0px;
+}
+
+div.opcion{
+	cursor:pointer;
+	margin:20px 30px 20px 30px;
+	background-color:white;
+	height:150px;
+	border: 3px solid black;
+	transition: margin .3s;
+}
+
+div.opcion:hover{
+	margin: 10px 20px 10px 20px;
+}
+
+a, a:hover, a :visited{
+	color: black;
+	text-decoration: none;
+}
+
+div.shade{
+	background-color:rgba(0,0,0,.75); 
+	height:100vh; 
+	width:40%; 
+}
+
+div.callAction{
+	cursor:pointer;
+	line-height:75px;
+	text-align:center;
+	border-radius:25px;
+	margin-top:100px;
+	margin-left: auto;
+	margin-right:auto;
+	display:block;
+	width: 225px;
+	height: 75px;
+	background-color:rgba(237,230,211,1);
+	color: black;
+	transition: box-shadow .2s;
+}
+div.callAction:hover{
+	box-shadow: 3px 3px 3px 2Spx rgba(255,255,255,.2);
+}

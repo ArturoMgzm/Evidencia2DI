@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Comentario </title>
+		<link rel="icon" href="./autorentLogo.PNG">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+		<link rel="stylesheet" href="./estilosEvidencia2.css">
+	</head>
+	<body>
+		<div style ="margin-top: 0px; background-color:black; color: white; width:100%;height:100px;">
+			<a href="./mainMenu.html">
+            <img style = "float:left;" src="./autorentLogo.PNG" width="100px" height="100px" />
+            </a>
+			<div class="users">
+				<img style="float:right;padding-top:25px; padding-right:25px" src="./assets/profile.png" width="50px" height="50px"/>
+				<div class="userMenu">
+					<a href="./historialRentas.html">
+						<p class="userOption" style="border-bottom: 1px solid black;">Historial rentas</p>
+					</a>
+					<p class="userOption">Cerrar Sesión</p>
+				</div>
+			</div>
+			<h1 style="text-align: center; line-height:100px; font-family: Courier; font-weight: bold;">Comentario de renta</h1>
+        </div>
+
+        <div class="container" style="padding-top: 0px;">
+            <form>
+                <div class="form-group" style="padding-bottom: 16px;">
+                    <label for="Email">Correo electronico de contacto*</label>
+                    <input class="form-control" id="Nombre" type="email" placeholder="ejemplo@dominio.com">
+					<label for="helper" style="padding-left: 16px; font-size: 11px;">El seguimiento de este comentario se realizara mediante el correo electronico ingresado</label>
+                </div>
+
+				<div style="padding-left: 16px; padding-bottom: 8px;">
+					<label for="mensaje">Motivo de comentario*</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Evaluación del vehiculo</option>
+						<option value="2">Evaluación del proceso de renta</option>
+                        <option value="3">Extravio de objetos personales</option>
+						<option value="4">Cancelación</option>
+						<option value="5">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group" style="padding-left: 16px; padding-bottom: 20px;">
+                    <label for="mensaje">Comentario de la renta*</label>
+                    <textarea class="form-control" id="mensaje" placeholder="Escribe el comentario"></textarea>
+                </div>
+
+
+                <div style="padding-left: 16px; padding-bottom: 8px;">
+                    <label for="helper" style="font-size: 11px;">En caso de necesitar alguna devolución, inserte su dirección</label>
+                    <div class="col-12">
+                        <label for="inputAddress" class="form-label">Dirreción</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="Paseo del Acueducto 2610">
+                      </div>
+    
+                      <div class="col-md-4">
+                        <label for="inputState" class="form-label">Ciudad</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Monterrey</option>
+                          <option>Guadalupe</option>
+                          <option>Apodaca</option>
+                        </select>
+                      </div>
+    
+                      <div class="col-md-2">
+                        <label for="inputZip" class="form-label">CP</label>
+                        <input type="text" class="form-control" id="inputZip" placeholder="64909">
+                      </div>
+                </div>
+
+                <div class="col-12" style="padding-left: 16px; padding-bottom: 0;">
+                    <a href="./historialRentas.html">
+						<button class="btn btn-primary" type="summit" style="background-color: black; border-color: black;">Enviar Comentario</button>
+                    </a>
+                </div>
+
+            </form>
+        </div>
+	</body>
+</html>
