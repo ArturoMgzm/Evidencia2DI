@@ -69,6 +69,13 @@ div.userMenu{
 	width:200px;
 }
 
+img.menuOption{
+	float:left;
+	background-color:white;
+	border-right: 3px solid black;
+	cursor:url(./assets/lupa.png), auto;
+}
+
 p.userOption{
 	cursor:pointer;
 	background-color:white;
